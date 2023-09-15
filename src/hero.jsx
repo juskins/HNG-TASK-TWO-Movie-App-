@@ -1,4 +1,4 @@
-import play from './assets/play.svg'
+import play from './assets/Play.svg'
 import imdb from './assets/imdb.png'
 import tom from './assets/tom.png'
 
@@ -29,4 +29,4 @@ const Hero = ()=>{
      )
 }
 
-export default Hero
+export default Hero;
