@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it?\nIt is a long established fact that a render will be distracted",
+      "author": "Mario",
+      "id": 1
+    },
+    {
+      "title": "Opening Party",
+      "body": "Why do we use it?\nIt is a long established fact that a render will be distractedLorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora fugiat ab, eaque obcaecati molestias iusto impedit quod culpa iure cumque enim modi quibusdam ipsum dolor mollitia facere repellat consequatur.",
+      "author": "Tunde",
+      "id": 2
+    },
+    {
+      "title": "babatunde",
+      "body": "kola",
+      "Author": "",
+      "id": 3
+    }
+  ]
+}

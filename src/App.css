@@ -1,0 +1,112 @@
+/* Add CSS styles for the grid layout */
+.homepage {
+  text-align: center;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  margin:20px 40px ;
+  grid-gap: 20px;
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.movie-card:hover{
+  box-shadow: 5px 5px 15px #333;
+}
+button:hover{
+  background: green;
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-card h2 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.movie-card p {
+  font-size: 12px;
+}
+.hero{
+  width: 30%;
+}
+.hero h1{
+  font-size: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu icon */
+  }
+
+  .hero{
+    width: 80%;
+    text-align: center;
+    padding: auto 40px;
+    
+  }
+  .hero h1{
+    font-size: 24px;
+  }
+  .hero img{
+    width: 30px;
+  }
+  .hero button, .hero .flex{
+    margin: 20px auto;
+  }
+}
+
+/* Styles for small screens (smartphones) */
+@media (max-width: 576px) {
+  .movie-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .movie-card, img{
+    text-align: center;
+    width: 100%;
+  }
+  .feature{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero{
+    width: 80%;
+    text-align: center;
+    padding: auto 40px;
+    
+  }
+  .hero h1{
+    font-size: 24px;
+  }
+  .hero img{
+    width: 30px;
+  }
+  .featured-img{
+    width: 90px;
+  }
+  .hero button, .hero .flex{
+    margin: 20px auto;
+  }
+}
