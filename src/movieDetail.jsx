@@ -7,7 +7,9 @@ const MovieDetailsPage = () => {
 
   useEffect(() => {
     // Define your API endpoint with the movie 'id'
-    const apiKey = 'bb06013ec4b19bc8bb3560faf4e39341';
+    const apiKey = import.meta.env.REACT_APP_API_KEY;
+    const bearerKey = import.meta.env.BEARER_KEY;
+    
     const apiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
     const options = {
       method: 'GET',
@@ -18,7 +20,7 @@ const MovieDetailsPage = () => {
     };
 
     // Fetch movie details using the API endpoint
-    fetch(apiUrl)
+    fetch(apiUrl,options)
       .then((response) => response.json())
       .then((data) => {
         // Update the 'movieDetails' state with the fetched data

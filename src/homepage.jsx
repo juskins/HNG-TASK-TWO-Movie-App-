@@ -9,8 +9,10 @@ const HomePage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const apiKey = 'bb06013ec4b19bc8bb3560faf4e39341';
-    const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
+    const apiKey = import.meta.env.REACT_APP_API_KEY;
+    // const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
+    const apiUrl = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
+
     const options = {
       method: 'GET',
       headers: {
@@ -20,8 +22,9 @@ const HomePage = () => {
     };
 
 
+
     setTimeout(() => {
-      fetch(apiUrl, options)
+      fetch(apiUrl,options)
       .then((response) => response.json())
       .then((data) => {
         // Extract the top 10 movies from the response

@@ -7,10 +7,10 @@ body{
   background-color: rgba(187, 235, 235, 0.616);
   background-color: white;
   display: flex;
-  /* height: 100vh; */
   align-items: center;
   justify-content: center;
-  font-family: cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -68,7 +68,7 @@ button:hover{
 }
 
 .flex{
-  display:'flex';
+  display:flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 10px;

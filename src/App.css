@@ -19,9 +19,7 @@
 .movie-card:hover{
   box-shadow: 5px 5px 15px #333;
 }
-button:hover{
-  background: green;
-}
+
 
 .movie-card img {
   max-width: 100%;
