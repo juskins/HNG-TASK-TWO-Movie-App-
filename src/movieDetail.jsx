@@ -49,7 +49,7 @@ const MovieDetailsPage = () => {
           }}></div>
           <h1 style={{fontSize:'40px',fontWeight:'bold'}} data-testid="movie-title">{movieDetails.title}</h1>
           <p style={{color:'blue'}} data-testid="movie-release-date">{movieDetails.releaseDate}</p>
-          <p style={{color:'#BE123C'}} data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
+          <p style={{color:'#BE123C'}} data-testid="movie-runtime">{movieDetails.runtime}</p>
           <p data-testid="movie-overview">{movieDetails.overview}</p>
      </div>
   );
