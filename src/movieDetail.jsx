@@ -47,10 +47,10 @@ const MovieDetailsPage = () => {
           width: '100%', 
           height: '400px',
           }}></div>
-          <h1 style={{fontSize:'40px',fontWeight:'bold'}} data-testid="movie-title">Title-{movieDetails.title}</h1>
-          <p style={{color:'blue'}} data-testid="movie-release-date">Release Date (UTC): {movieDetails.releaseDate}</p>
-          <p style={{color:'#BE123C'}} data-testid="movie-runtime">Runtime - {movieDetails.runtime} minutes</p>
-          <p data-testid="movie-overview">Overview- {movieDetails.overview}</p>
+          <h1 style={{fontSize:'40px',fontWeight:'bold'}} data-testid="movie-title">{movieDetails.title}</h1>
+          <p style={{color:'blue'}} data-testid="movie-release-date">{movieDetails.releaseDate}</p>
+          <p style={{color:'#BE123C'}} data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
+          <p data-testid="movie-overview">{movieDetails.overview}</p>
      </div>
   );
 };
